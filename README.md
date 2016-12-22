@@ -1,3 +1,3 @@
 # conwaypear
 
-Pair programming Conway's game of life. 
+Pair programming Conway's Game of Life. 
