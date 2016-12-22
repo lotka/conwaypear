@@ -1,2 +1,3 @@
-# improvconway
+# conwaypear
 
+Pair programming Conway's game of life. 
