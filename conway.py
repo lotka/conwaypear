@@ -5,6 +5,8 @@ def generate_next_board_state(board):
 
 def count_alive_cells_near_cell(board,x,y,x_size,y_size):
     for i in [x-1,x+1]:
+        for j in [y-1,y+1]:
+            if(board[i][j] == 1):
 
 board = []
 iteration = 0
