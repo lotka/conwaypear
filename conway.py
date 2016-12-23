@@ -3,6 +3,9 @@ from pprint import pprint
 def generate_next_board_state(board):
     return board
 
+def count_alive_cells_near_cell(board,x,y,x_size,y_size):
+    for i in [x-1,x+1]:
+
 board = []
 iteration = 0
 size = 8
