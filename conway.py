@@ -3,10 +3,12 @@ from pprint import pprint
 def generate_next_board_state(board):
     return board
 
-def count_alive_cells_near_cell(board,x,y,x_size,y_size):
+def count_alive_cells_near_cell(board,x,y):
+    count = 0
     for i in [x-1,x+1]:
         for j in [y-1,y+1]:
-            if(board[i][j] == 1):
+            if(board[i % len(board)][j % len(board[0])] == 1):
+                count += 1
 
 board = []
 iteration = 0
