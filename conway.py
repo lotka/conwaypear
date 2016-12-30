@@ -3,7 +3,9 @@ from copy import copy
 
 def generate_next_board_state(board):
     new_board = copy(board)
-    for i in xrange(len(board)): pass;
+    for i in xrange(len(board)):
+        for j in xrange(len(board)):
+            if count_alive_cells_near_cell(board, i, j): pass
     return new_board
 
 def count_alive_cells_near_cell(board,x,y):
