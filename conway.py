@@ -16,6 +16,8 @@ def generate_next_board_state(board):
             count = count_alive_cells_near_cell(board, i, j)
             if board[i][j] == 1:
                 if count < 2: new_board[i][j] = 0; # Rule 1
+                if count > 3: new_board[i][j] = 0; # Rule 3
+            if board[i][j] == 0: pass 
     return new_board
 
 def count_alive_cells_near_cell(board,x,y):
