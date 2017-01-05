@@ -17,7 +17,8 @@ def generate_next_board_state(board):
             if board[i][j] == 1:
                 if count < 2: new_board[i][j] = 0; # Rule 1
                 if count > 3: new_board[i][j] = 0; # Rule 3
-            if board[i][j] == 0: pass 
+            if board[i][j] == 0:
+                if count == 3: new_board[i][j] = 1;
     return new_board
 
 def count_alive_cells_near_cell(board,x,y):
@@ -36,6 +37,7 @@ for i in range(size):
 
 #Seed the first life-form
 board[5][5] = 1
+board[4][5] = 1
 
 while (iteration < 3):
     pprint(board)
